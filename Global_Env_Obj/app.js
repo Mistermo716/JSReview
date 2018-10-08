@@ -28,4 +28,7 @@ console.log(this.c);
 function b() {}
 
 //Execution context
-/* When JS is executed Global Object and 'This is created' */
+/* When JS is executed Global Object and 'This is created'
+Global Object in the browser is the window object
+There will be linked to the Outer Enviornment if we are within a function
+Outer Enviornment is null on the global level */
