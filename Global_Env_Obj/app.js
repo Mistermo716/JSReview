@@ -24,8 +24,18 @@ console.log(`this.a: ${this.a}`);
 //let is not global. var attaches global scope
 console.log(this.c);
 
+/* During the Execution context Sets up memory space
+for variables and Functions - "Hoisting"
+JS engine has set aside memory space for memory and variables
+so when it executes line by line it already has access
+to both functions and variables for variables 
+it instiates them but does not set them let c; and not 'test hello so its undefined'
+the entire function b is in memory however. therefore we can run before it is declared */
+b();
 //this function is also global
-function b() {}
+function b() {
+  console.log('B function ran');
+}
 
 //Execution context
 /* When JS is executed Global Object and 'This is created'
